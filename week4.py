@@ -1,8 +1,12 @@
-greeting = "Hello-World" # Setting up a string to iterate through
+while True: # This is an infinite loop
+  number = int(input("Please type a number between 1 and 10: ")) # Take user input
 
-for character in greeting: # Iterate over the string one letter at a time
-    if "-" in character: # if the current character is a hyphen
-        print("Hyphen detected, ending loop!")
-        break # End the loop
-    else:
-        print(character) # Print the current character
+  if number < 1: # Number is too small
+    print("Number provided is less than 1")
+
+  elif number > 10: # Number is too large
+    print("Number provided is greater than 10")
+
+  else: # If the input is in a valid range
+    print("Number provided is between 1 and 10")
+    break # End the loop
