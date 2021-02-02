@@ -24,9 +24,11 @@ print(result == 11)
     For example if someone put in 8, then it would print 'eight'.
     Hint: Use if, elif and else statements.
 """
-num = int(input("Type in a number 1-10: "))
+num = int(input("Type in a number 0-10: "))
 
-if num == 1:
+if num == 0:
+    print("Zero")
+elif num == 1:
     print("One")
 elif num == 2:
     print("Two")
@@ -55,18 +57,18 @@ elif num == 10:
     execute and why. Then uncomment the code
     and check if you were right.
 """
-# number = 0
-# number += 15
-# number //= 2
-# number *= 6
-# number -= 4
-# if number < 10:
-#     print("Less than 10")
-# elif 10 <= number <= 20:
-#     print("Between 10 and 20")
-# elif 20 <= number <= 30:
-#     print("Between 20 and 30")
-# elif 30 <= number <= 40:
-#     print("Between 30 and 40")
-# else:
-#     print("Â¯\_(ãƒ„)_/Â¯")
+number = 0
+number += 15
+number //= 2
+number *= 6
+number -= 4
+if number < 10:
+    print("Less than 10")
+elif 10 <= number <= 20:
+    print("Between 10 and 20")
+elif 20 <= number <= 30:
+    print("Between 20 and 30")
+elif 30 <= number <= 40:
+    print("Between 30 and 40")
+else:
+    print("Â¯\_(ãƒ„)_/Â¯")
