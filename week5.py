@@ -22,7 +22,7 @@ class Contractor:
         ----------
         length(int): How long the structure that needs to be built is.
         """
-        number_of_planks = None # Just a dummy value, replace with the real calculation
+        number_of_planks = length / self.plank_length # Just a dummy value, replace with the real calculation
         return f"You need {number_of_planks} plank(s) of wood to build this wall"
 dave = Contractor(2)
 print(dave.estimate_planks(10)) # Should be 5 planks
@@ -39,7 +39,10 @@ print(billy.estimate_planks(225)) # Should be 45 planks
             1. next_birthday: A method that returns a string of the users birthday this year, if it is today then return 'Happy Birthday!' instead.
 """
 class User:
-    def __init__(self):
+    def __init__(self, name, birthday, premium):
+        self.name = name
+        self.birthday = birthday
+        self.premium = premium
         pass
     def next_birthday(self):
         pass
@@ -47,8 +50,10 @@ john = User("John Doe", datetime.date(1995,10,25), True)
 print(john.next_birthday()) # You will have to validate this yourself
 print("John Doe" in john.name)  # Should print True
 print(john.premium) # Should Print True
+
 """
     =========== Exercise 3 =============
     Take the previous user class from before, and add a class docstring to it.
     For more details on docstrings and their formatting check out: https://github.com/canadian-coding/posts/tree/master/2019/July/25th%20-%20Docstrings%20in%20python
 """
+
