@@ -43,14 +43,11 @@ class User:
         self.name = name
         self.birthday = birthday
         self.premium = premium
-        pass
+        
     def next_birthday(self):
-        now = datetime.datetime.now()
+        today = datetime.datetime.today()
+        if == today.month() AND == today.day():
 
-        date1 = now
-        date2 = datetime.datetime(now.year, original_date.month, original_date.day)
-        delta = date2 - date1
-        days = delta.total_seconds() / 60 /60 /24
 
 
         pass
