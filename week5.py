@@ -22,7 +22,7 @@ class Contractor:
         ----------
         length(int): How long the structure that needs to be built is.
         """
-        number_of_planks = length / self.plank_length # Just a dummy value, replace with the real calculation
+        number_of_planks = length // self.plank_length # Just a dummy value, replace with the real calculation
         return f"You need {number_of_planks} plank(s) of wood to build this wall"
 dave = Contractor(2)
 print(dave.estimate_planks(10)) # Should be 5 planks
@@ -45,6 +45,14 @@ class User:
         self.premium = premium
         pass
     def next_birthday(self):
+        now = datetime.datetime.now()
+
+        date1 = now
+        date2 = datetime.datetime(now.year, original_date.month, original_date.day)
+        delta = date2 - date1
+        days = delta.total_seconds() / 60 /60 /24
+
+
         pass
 john = User("John Doe", datetime.date(1995,10,25), True)
 print(john.next_birthday()) # You will have to validate this yourself
